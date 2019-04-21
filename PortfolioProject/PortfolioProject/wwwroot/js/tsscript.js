@@ -1,5 +1,5 @@
 ///<reference path="../node_modules/@types/jquery/jquery.d.ts" />
 $(document).ready(() => {
-    $(document.body).css('background-color', 'magenta');
+    $(document.body).css('background-color', 'green');
 });
 //# sourceMappingURL=tsscript.js.map

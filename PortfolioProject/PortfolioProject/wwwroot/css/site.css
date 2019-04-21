@@ -45,8 +45,13 @@ body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
 }
+
+main{
+    background-color: green;
+}
 .footer {
   position: absolute;
+  background-color: grey;
   bottom: 0;
   width: 100%;
   white-space: nowrap;

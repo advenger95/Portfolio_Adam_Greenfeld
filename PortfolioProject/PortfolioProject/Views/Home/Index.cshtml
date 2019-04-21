@@ -1,8 +1,15 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Adam Greenfeld";
 }
-
-<div class="text-center">
-    <h1 class="display-4">OH NO!!!!</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="container-fluid">
+    <img src="~/Images/Background.JPG" class="img-fluid" alt="Responsive image">
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">@ViewData["Title"]</h1>
+            <p class="lead">Welcome to my Portfolio Site!</p>
+            <hr class="my-4">
+            <p>Click the button below to learn more about my work.</p>
+            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+        </div>
+    </div>
 </div>

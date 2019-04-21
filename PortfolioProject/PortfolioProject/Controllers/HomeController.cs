@@ -20,6 +20,11 @@ namespace PortfolioProject.Controllers
             return View();
         }
 
+        public IActionResult Skills()
+        {
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();

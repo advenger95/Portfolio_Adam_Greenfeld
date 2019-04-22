@@ -44,17 +44,10 @@ html {
 body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
+ 
 }
 
-.fa {
-    padding: 20px;
-    font-size: 50px;
-    width: 30px;
-    text-align: center;
-    text-decoration: none;
-    margin: 5px 2px;
-    border-radius: 50%;
-}
+
 
 .footer {
   position: absolute;
@@ -66,5 +59,31 @@ body {
   line-height: 60px; /* Vertically center the text there */
   
 }
+
+
+#360Photo{
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -1;
+}
+
+#contForm{
+    background-color: aliceblue;
+    color:dimgrey;
+    border: 1px solid;
+    border-radius: 5%;
+    margin-bottom: 40px;
+}
+
+#emailLink{
+    text-align:center;
+    justify-content: center;
+}
+
+.lead{
+    color: whitesmoke;;
+}
+
+
 
 

@@ -1,0 +1,70 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Contact Me";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<form>
+    <div class="form-row">
+        <div class="col">
+            <label for="inputName">Name:</label>
+            <input type="text" class="form-control" id="inputName" placeholder="Name">
+        </div>
+        <div class="col">
+            <label for="inputEmail">Email:</label>
+            <input type="email" class="form-control" id="inputEmail" placeholder="email@example.com">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="FormControlSelect">Required Job:</label>
+        <select class="form-control" id="FormControlSelect">
+            <option>Web Design</option>
+            <option>Video Editing</option>
+            <option>Photography</option>
+            <option>UX/UI Design</option>
+            <option>Logo Design</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="messageArea">Job Description:</label>
+        <textarea class="form-control" id="messageArea" rows="4"></textarea>
+    </div>
+
+
+
+
+</form>
+
+
+<div class="container-fluid">
+    <div class="row">
+        <p class="lead text-center">For further chats and coffee, email me at:</p>
+        
+    </div>
+    <div class="row text-center">
+        
+        <h3><span><i class="fa fa-google" style="font-size:48px;color:dimgrey; margin-right: 15px;"></i></span>greenfeld.adam@gmail.com</h3>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <p class="lead text-center">Or hit me up on my socials...</p>
+        </div>
+        <div class="col-md-6">
+            <a href="#" class="fa fa-facebook" style="padding: 20px;font-size: 50px; width: 30px;text-align: center;text-decoration: none;margin: 3px 10px;border-radius: 50%;"></a>
+            <a href="#" class="fa fa-github" style="padding: 20px;font-size: 50px;width: 30px;text-align: center;text-decoration: none;margin: 3px 10px;border-radius: 50%; color: mediumpurple;"></a>
+            <a href="#" class="fa fa-wordpress" style="padding: 20px;font-size: 50px;width: 30px;text-align: center;text-decoration: none;margin: 3px 10px;border-radius: 50%; color:aqua;"></a>
+            <a href="#" class="fa fa-youtube-play" style="padding: 20px;font-size: 50px;width: 30px;text-align: center;text-decoration: none;margin: 3px 10px;border-radius: 50%; color: red;"></a>
+            <a href="#" class="fa fa-codepen" style="padding: 20px;font-size: 50px;width: 30px;text-align: center;text-decoration: none;margin: 3px 10px;border-radius: 50%; color: floralwhite;"></a>
+            <a href="#" class="fa fa-linkedin" style="padding: 20px;font-size: 50px;width: 30px;text-align: center;text-decoration: none;margin: 3px 10px;border-radius: 50%; color:white;"></a>
+            <a href="#" class="fa fa-instagram" style="padding: 20px;font-size: 50px;width: 30px;text-align: center;text-decoration: none;margin: 3px 10px;border-radius: 50%; color:deeppink;"></a>
+        </div>
+    </div>
+
+
+</div>

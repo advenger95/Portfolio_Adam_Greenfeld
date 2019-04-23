@@ -80,8 +80,13 @@ body {
     justify-content: center;
 }
 
+#bioBox{
+    background-color:azure;
+    border-radius: 20%;
+}
+
 .lead{
-    color: whitesmoke;;
+    color: slategrey;
 }
 
 

@@ -43,10 +43,23 @@ html {
 
 body {
   /* Margin bottom by footer height */
+  padding-top: 70px;
   margin-bottom: 60px;
  
 }
 
+.navbar{
+    
+    width: 100%;
+    z-index: 1;
+}
+
+.navbar li:hover{
+    background-color: dodgerblue;
+    color: white;
+    border-radius: 15px;
+    transition: ease-in-out 0.5s
+}
 
 
 .footer {
@@ -81,6 +94,7 @@ body {
 }
 
 #bioBox{
+    margin-top: 25px;
     background-color: cornflowerblue;
     border: 1px dashed aqua;
     
@@ -97,6 +111,35 @@ body {
 
 /* Skill bar styles
 -------------------------------------------------- */
+.progress-bar {
+    width: 0;
+    animation: progress 1.9s ease-in-out forwards;
+    
+
+    
+
+}
+
+@keyframes progress {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 
 
 /* Social button styles
@@ -109,5 +152,9 @@ body {
 .fa fa-wordpress:hover{
     color: darkcyan;
 }
+
+/* Portfolio Images styles
+-------------------------------------------------- */
+
 
 

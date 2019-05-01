@@ -81,7 +81,7 @@ body {
 }
 
 #bioBox{
-    background-color: navajowhite;
+    background-color: cornflowerblue;
     border: 1px dashed aqua;
     
 }
@@ -90,9 +90,24 @@ body {
     color: black;
 }
 
+#projectRow{
+    margin: 15px;
+}
+
 
 /* Skill bar styles
 -------------------------------------------------- */
 
+
+/* Social button styles
+-------------------------------------------------- */
+
+.fa fa-github:hover{
+    color: darkmagenta;
+}
+
+.fa fa-wordpress:hover{
+    color: darkcyan;
+}
 
 

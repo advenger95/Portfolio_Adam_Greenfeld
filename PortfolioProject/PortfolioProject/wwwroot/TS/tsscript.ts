@@ -2,4 +2,7 @@
 
 $(document).ready(() => {
     $(document.body).css('background-color', 'dodgerblue');
+
+    //project lightboxes
+    
 });

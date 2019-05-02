@@ -110,6 +110,8 @@ body {
     color: black;
 }
 
+
+
 #projectRow{
     margin: 15px;
 }
@@ -117,6 +119,12 @@ body {
 
 /* Skill bar styles
 -------------------------------------------------- */
+
+#skillLab{
+    font-size: 24px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 .progress-bar {
     width: 0;
     animation: progress 1.9s ease-in-out forwards;

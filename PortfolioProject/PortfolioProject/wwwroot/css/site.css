@@ -54,7 +54,7 @@ body {
     z-index: 1;
 }
 
-.navbar li:hover{
+.navbar li a:hover{
     background-color: dodgerblue;
     color: white;
     border-radius: 15px;
@@ -82,10 +82,16 @@ body {
 
 #contForm{
     background-color: aliceblue;
+    padding: 25px;
     color:dimgrey;
     border: 1px solid;
-    border-radius: 5%;
+    border-radius: 2%;
     margin-bottom: 40px;
+}
+
+#contactLead{
+    color:antiquewhite;
+    justify-content: center;
 }
 
 #emailLink{

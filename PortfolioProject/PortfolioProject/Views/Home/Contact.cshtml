@@ -1,43 +1,75 @@
-﻿
+﻿@model PortfolioProject.Models.ContacViewModal
 @{
     ViewData["Title"] = "Contact Me";
 }
 
+<script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+<script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+
 <body>
 
     <h1>@ViewData["Title"]</h1>
-
-    <form id="contForm" method="post">
-        <div class="form-row">
-            <div class="col-sm-6">
-                <label for="Name">Name:</label>
-                <input type="text" class="form-control" id="Name" placeholder="Name">
-            </div>
-            <div class="col-sm-6">
-                <label for="Email">Email:</label>
-                <input type="email" class="form-control" id="Email" placeholder="email@example.com">
-            </div>
-        </div>
-
-        <div class="form-group">
-            <label for="FormControlSelect">Required Job:</label>
-            <select class="form-control" id="FormControlSelect">
-                <option>Web Design</option>
-                <option>Video Editing</option>
-                <option>Photography</option>
-                <option>UX/UI Design</option>
-                <option>Logo Design</option>
-            </select>
-        </div>
-
-        <div class="form-group">
-            <label for="messageArea">Job Description:</label>
-            <textarea class="form-control" id="messageArea" rows="4" cols="15" placeholder="How can I help....?"></textarea>
-        </div>
+    <div class="col" id="conform">
         <div>
-            <button type="submit" value="Send" name="sumbit" class="btn btn-primary">Submit</button>
+            @if (ViewBag.Message == null)
+            {
+                <div>
+                    <form id="contForm" method="post">
+                        <div class="form-row">
+                            <div class="col-sm-6">
+                                <label asp-for="Name">Name:</label>
+                                <input type="text" class="form-control" asp-for="Name" placeholder="Name">
+                                <span asp-validation-for="Name"
+                                      class="text-muted"></span>
+                            </div>
+                            <div class="col-sm-6">
+                                <label asp-for="Email">Email:</label>
+                                <input type="email" class="form-control" asp-for="Email" placeholder="email@example.com">
+                                <span asp-validation-for="Email"
+                                      class="text-muted"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="Subject">Required Job:</label>
+                            <select class="form-control" asp-for="Subject">
+                                <option>Web Design</option>
+                                <option>Video Editing</option>
+                                <option>Photography</option>
+                                <option>UX/UI Design</option>
+                                <option>Logo Design</option>
+                            </select>
+                            <span asp-validation-for="Subject"
+                                  class="text-muted"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="Message">Job Description:</label>
+                            <textarea class="form-control" asp-for="Message" rows="4" cols="15" placeholder="How can I help....?"></textarea>
+                            <span asp-validation-for="Message"
+                                  class="text-muted"></span>
+                        </div>
+                        <div>
+                            <button type="submit" value="Send" name="submit" class="btn btn-success">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            }
         </div>
-    </form>
+
+        <div>
+            <div>
+                @if (ViewBag.Message != null)
+                {
+                    <div>@ViewBag.Message</div>
+
+
+                }
+            </div>
+        </div>
+    </div>
+    
 
 
     <div class="container-fluid">
@@ -55,7 +87,7 @@
                 <p class="lead text-center" id="contactLead">Or hit me up on my social links...</p>
             </div>
             <div class="col-md-6">
-                <a href="#" class="fa fa-facebook"  style="padding: 20px;font-size: 50px; width: 30px;text-align: center;text-decoration: none;margin: 3px 10px;border-radius: 50%;"></a>
+                <a href="#" class="fa fa-facebook" style="padding: 20px;font-size: 50px; width: 30px;text-align: center;text-decoration: none;margin: 3px 10px;border-radius: 50%;"></a>
                 <a href="#" class="fa fa-github" id="github" style="padding: 20px;font-size: 50px;width: 30px;text-align: center;text-decoration: none;margin: 3px 10px;border-radius: 50%; /*color: mediumpurple;*/"></a>
                 <a href="#" class="fa fa-wordpress" id="wordpress" style="padding: 20px;font-size: 50px;width: 30px;text-align: center;text-decoration: none;margin: 3px 10px;border-radius: 50%; /*color:aqua;*/"></a>
                 <a href="#" class="fa fa-youtube-play" id="youtube" style="padding: 20px;font-size: 50px;width: 30px;text-align: center;text-decoration: none;margin: 3px 10px;border-radius: 50%; /*color: red;*/"></a>

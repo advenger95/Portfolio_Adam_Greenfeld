@@ -9,15 +9,15 @@
 
     <h1>@ViewData["Title"]</h1>
 
-    <form id="contForm">
+    <form id="contForm" method="post">
         <div class="form-row">
             <div class="col-sm-6">
-                <label for="inputName">Name:</label>
-                <input type="text" class="form-control" id="inputName" placeholder="Name">
+                <label for="Name">Name:</label>
+                <input type="text" class="form-control" id="Name" placeholder="Name">
             </div>
             <div class="col-sm-6">
-                <label for="inputEmail">Email:</label>
-                <input type="email" class="form-control" id="inputEmail" placeholder="email@example.com">
+                <label for="Email">Email:</label>
+                <input type="email" class="form-control" id="Email" placeholder="email@example.com">
             </div>
         </div>
 
@@ -36,7 +36,10 @@
             <label for="messageArea">Job Description:</label>
             <textarea class="form-control" id="messageArea" rows="4" placeholder="How can I help....?"></textarea>
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <div>
+            <button type="submit" value="Send" name="sumbit" class="btn btn-primary">Submit</button>
+        </div>
+        
 
 
 

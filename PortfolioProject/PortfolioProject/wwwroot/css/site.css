@@ -167,6 +167,16 @@ body {
     color: darkcyan;
 }
 
+.fa {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+    .fa:hover {
+        transition: all .2s ease-in-out;
+        transform: scale(1.5);
+    }
+
 /* Portfolio Images styles
 -------------------------------------------------- */
 

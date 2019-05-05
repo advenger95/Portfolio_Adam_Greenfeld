@@ -158,6 +158,10 @@ body {
 
 /* Social button styles
 -------------------------------------------------- */
+#socialBox{
+    margin-bottom: 30px;
+}
+
 .fa {
     display: inline-block;
     margin-right: 15px;

@@ -123,6 +123,7 @@ body {
 #skillLab{
     font-size: 24px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 10px;
 }
 
 .progress-bar {
@@ -208,7 +209,7 @@ body {
 
 
 #paral {
-    min-height: 700px;
+    min-height: 750px;
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -224,6 +225,7 @@ body {
     background-color: rgba(150, 111, 190, 0.65);
     padding: 50px;
     border-radius: 10px;
+
 }
 
 #paralp{
@@ -261,7 +263,10 @@ body {
 }
 
 .paralsec5 {
-    background-image: url(/Images/darkside.jpeg);
+    background-image: url(/Images/tuxOvPY.jpg);
+}
+.paralsec6 {
+    background-image: url(/Images/360imgcity.JPG);
 }
     /* Remove Bottom Margin from Jumbotron */
 .jumbotron {

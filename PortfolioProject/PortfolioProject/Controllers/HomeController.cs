@@ -21,6 +21,11 @@ namespace PortfolioProject.Controllers
             return View();
         }
 
+        public IActionResult About2()
+        {
+            return View();
+        }
+
         public IActionResult Skills()
         {
             return View();

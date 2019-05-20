@@ -203,4 +203,65 @@ body {
 -------------------------------------------------- */
 
 
+/* About me parralex styles
+-------------------------------------------------- */
 
+
+#paral {
+    min-height: 700px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+   
+}
+
+
+
+/*Paral text styles*/
+
+#paralcont {
+    background-color: rgba(73, 185, 202, 0.49);
+    padding: 40px;
+    border-radius: 10px;
+    
+}
+
+#paralp{
+    font-size: 24px;
+    text-align: center;
+    color: white;
+    line-height: 50px;
+}
+
+#paralh1 {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 60px;
+    text-align: center;
+    padding-top: 60px;
+    line-height: 100px;
+}
+
+ /*Background image styles*/
+
+.paralsec {
+    background-color: rgba(73, 185, 202, 0.49);
+    background-image: url(/Images/Adam.png.jpg);
+    
+}
+.paralsec2 {
+    background-image: url(/Images/Background.JPG);
+}
+
+.paralsec3 {
+    background-image: url(/Images/curtin_campus2.jpg);
+}
+
+.paralsec4{
+    background-image: url(/Images/advenger.JPG);
+}
+
+/* Remove Bottom Margin from Jumbotron */
+.jumbotron {
+    margin-bottom: 0;
+}

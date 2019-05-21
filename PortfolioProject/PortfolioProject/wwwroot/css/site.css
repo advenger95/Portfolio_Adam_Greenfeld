@@ -209,7 +209,8 @@ body {
 
 
 #paral {
-    min-height: 750px;
+    
+    min-height: 850px;
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -223,8 +224,9 @@ body {
 
 #paralcont {
     background-color: rgba(150, 111, 190, 0.65);
-    padding: 50px;
+    padding: 45px;
     border-radius: 10px;
+    
 
 }
 
@@ -241,12 +243,45 @@ body {
     text-align: center;
     padding-top: 60px;
     line-height: 100px;
+   
 }
+
+.typewriter {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .08em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: typing 3.5s steps(30, end), blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: lightgrey;
+    }
+}
+
 
     /*Background image styles*/
 
 .paralsec {
-    background-color: rgba(73, 185, 202, 0.49);
+    
     background-image: url(/Images/Adam.png.jpg);
     
 }

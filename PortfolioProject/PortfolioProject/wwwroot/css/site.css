@@ -223,6 +223,7 @@ body {
 /*Paral text styles*/
 
 #paralcont {
+    
     background-color: rgba(150, 111, 190, 0.65);
     padding: 45px;
     border-radius: 10px;
@@ -251,7 +252,7 @@ body {
     border-right: .08em solid orange; /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
+    letter-spacing: .10em; /* Adjust as needed */
     animation: typing 3.5s steps(30, end), blink-caret .5s step-end infinite;
 }
 

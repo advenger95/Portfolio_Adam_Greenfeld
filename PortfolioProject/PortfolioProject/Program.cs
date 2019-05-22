@@ -17,8 +17,13 @@ namespace PortfolioProject
             CreateWebHostBuilder(args).Build().Run();
         }
 
-        public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
-            WebHost.CreateDefaultBuilder(args)
+        public static IWebHostBuilder CreateWebHostBuilder(string[] args)
+        {
+            ElasticBeanstalkConfig.SetEbConfig();
+
+            return WebHost.CreateDefaultBuilder(args)
                 .UseStartup<Startup>();
+        }
+            
     }
 }

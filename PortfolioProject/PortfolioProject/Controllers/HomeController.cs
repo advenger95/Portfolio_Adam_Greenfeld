@@ -51,6 +51,12 @@ namespace PortfolioProject.Controllers
             {
                 try
                 {
+                    var smtpHost = Environment.GetEnvironmentVariable("SMTP_HOST");
+                    var smtpPort = Environment.GetEnvironmentVariable("SMTP_PORT");
+                    var smtpUsername = Environment.GetEnvironmentVariable("SMTP_USERNAME");
+                    var smtpPassword = Environment.GetEnvironmentVariable("SMTP_PASSWORD");
+
+
                     MailMessage msz = new MailMessage();
                     msz.From = new MailAddress(vm.Email);//Email which you are getting 
                                                          //from contact us page 
@@ -59,12 +65,11 @@ namespace PortfolioProject.Controllers
                     msz.Body = vm.Message;
                     SmtpClient smtp = new SmtpClient();
 
-                    smtp.Host = "smtp.gmail.com";
+                    smtp.Host = smtpHost;
 
-                    smtp.Port = 587;
+                    smtp.Port = int.Parse(smtpPort);
 
-                    smtp.Credentials = new System.Net.NetworkCredential
-                    ("greenfeld.adam@gmail.com", "ModernMan1969");
+                    smtp.Credentials = new System.Net.NetworkCredential(smtpUsername, smtpPassword);
 
                     smtp.EnableSsl = true;
                     smtp.DeliveryMethod = SmtpDeliveryMethod.Network;

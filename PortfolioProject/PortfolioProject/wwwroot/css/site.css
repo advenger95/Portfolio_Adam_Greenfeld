@@ -293,15 +293,18 @@ body {
 .paralsec3 {
     background-image: url(/Images/curtin_campus2.jpg);
 }
+.paralsec4 {
+    background-image: url(/Images/curtin_campus2.jpg);
+}
 
-.paralsec4{
+.paralsec5{
     background-image: url(/Images/advenger.JPG);
 }
 
-.paralsec5 {
+.paralsec6 {
     background-image: url(/Images/tuxOvPY.jpg);
 }
-.paralsec6 {
+.paralsec7 {
     background-image: url(/Images/360imgcity.JPG);
 }
     /* Remove Bottom Margin from Jumbotron */
